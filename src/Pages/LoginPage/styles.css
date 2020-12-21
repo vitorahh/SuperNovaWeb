@@ -1,0 +1,133 @@
+
+#page-login{
+   
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-line-in-white);
+    background-color: var(--color-background-dark);
+}
+.logo-img{
+    padding: 0 25% 3rem 25%;
+    width: 100%;
+}
+
+.logo-container{
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+.logo-container img{
+    height: 10rem;
+    display: none;
+}
+.logo-container form{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.page-login-content h2{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 4.6rem;
+    margin-top:0;
+    text-align: center;
+}
+.input-block{
+    margin:0;
+}
+.input-block input{
+    height: 4rem;
+    width: 100%;
+    padding-left: 2rem;
+    border-radius: 0.5rem;
+    border:0.8rem;
+    margin-bottom: 1.2rem;
+}
+.input-block input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--color-text-base);
+    padding-left: 0.5rem;
+    opacity: 1; /* Firefox */
+}
+.input-block input::-ms-value { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--color-text-base);
+    padding-left: 1.0rem;
+    opacity: 1; /* Firefox */
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.button-container a{
+    width: 100%;
+    height: 5.0rem;
+    border-radius: 0.5rem;
+    font:700 2.0rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    color:var(--color-button-text);
+    transition:background-color 0.2s;
+}
+.button-container a:first-child{
+    margin-right: 1.6rem;
+}
+.button-container a img{
+    width: 2rem;
+    margin-right: 1rem;
+}
+.button-container a.login{
+    font-size: 1.5rem;
+    background:var(--color-secundary);
+}
+.button-container a.cadastrar{
+    font-size: 1.5rem;
+    background:var(--color-background-dark);
+}
+.button-container a.cadastrar:hover{
+    color: var(--color-text-link);
+}
+.button-container a.login:hover{
+    background:var(--color-secundary-dark);
+}
+@media(min-width:900px){
+    .page-login-content{
+        max-width: 900px;
+        display: grid;
+        grid-template-rows: 350px 1fr;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas: 
+            'LI LG'
+            'FOR LB';
+    }
+    .logo-container{
+        grid-area: LI;
+        align-self: center;
+        margin:0;
+        
+    }
+    .logo-img{
+        grid-area: LG;
+        justify-self: end;
+        padding:0;
+        align-self: center;
+    }
+    .LoginSuperNova{
+        grid-area:FOR;
+    }
+    .page-login-content h2{
+        grid-area:LB;
+        font-size: large;
+    }
+    .logo-container img{
+       margin-bottom: 1.0rem;
+       display: inline-flex;
+    }
+    .button-container a img{
+        width: 2rem;
+        margin-bottom: 0;
+    }
+}

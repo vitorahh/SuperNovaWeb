@@ -1,0 +1,55 @@
+.searchTable{
+    width: 100%;
+}
+.search-label{
+    width: 100%;
+}
+.pagination{
+    justify-content: center;
+}
+
+
+.headerClassTable{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tdFilterNumber{
+    width: 100%;
+}
+.VlClassNumber{
+    width: 100px;
+}
+.ButtonClassTable{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.RowTable{
+    height: 1rem !important;
+    padding: 0;
+}
+.RowTable td{
+    padding: 0.1rem 1rem;
+    text-align: center;
+    vertical-align:middle !important;
+}
+
+th{
+    padding: 0.1rem 0.1rem!important;
+    vertical-align:middle !important;
+    height: 3rem;
+}
+
+th label{
+   margin-bottom: 0;
+   vertical-align: middle;
+   display: contents;
+}
+
+
+.filter .filter-label{
+    position: absolute;
+}
+

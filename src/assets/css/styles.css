@@ -1,0 +1,9 @@
+.ButtonWhite{
+    color: #ffffff !important;
+}
+.ButtonWhite:hover{
+    color: #d6d6d6 !important;
+}
+.imgFormat{
+    display: flex;
+}
